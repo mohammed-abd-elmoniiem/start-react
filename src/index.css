@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+
+
+div.footer{
+    background: 
+    linear-gradient(#000000ab, #030303f6),
+   
+    radial-gradient(circle, #1b1b1b 0% 20%, #ffffff00 20%) center /20px 20px,
+    linear-gradient(45deg,transparent 0% 45%,#1b1b1b 45% 55% ,#ff000000 55%) center / 20px 20px , 
+    linear-gradient(-45deg, transparent 0% 45%, #444444 45% 55%, #ff000000 55%) center / 20px 20px,
+    linear-gradient(#000000 ,#030303)
+    ;
+}

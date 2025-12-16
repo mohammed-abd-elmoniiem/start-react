@@ -12,7 +12,7 @@ export default function About(){
 
     return(
         <>
-        <div className="py-5 grid grid-cols-1 sm:grid-cols-2 justify-center  gap-8 px-3 sm:px-20 bg-green-500
+        <div className="grow  text-amber-50 py-5 grid grid-cols-1 sm:grid-cols-2 justify-center  gap-8 px-3 sm:px-20 bg-neutral-800 
         ">
 
 

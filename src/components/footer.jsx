@@ -22,7 +22,7 @@ export default function Footer(){
     return(
         <>
 
-        <div className="flex flex-col items-center sm:items-start  gap-12 sm:gap-8 bg-neutral-950  text-amber-50 pt-15 sm:grid grid-cols-3">
+        <div className="footer flex flex-col items-center sm:items-start  gap-12 sm:gap-8  text-amber-50 pt-15 sm:grid grid-cols-3">
 
             <div className="location flex flex-col items-center justify-start gap-2 h-full">
                 <h2 className="uppercase font-bold text-2xl">
