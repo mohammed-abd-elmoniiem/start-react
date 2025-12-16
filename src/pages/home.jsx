@@ -10,7 +10,7 @@ export default function Home(){
 
         <div className="flex flex-col gap-5 items-center py-12 ">
             <div className="w-44">
-                <img className="" src="./src/assets/images/avataaars.svg" alt="avatar " />
+                <img className="" src="/images/avataaars.svg" alt="avatar " />
             </div>
 
             <Title Str = 'start framework'/>
