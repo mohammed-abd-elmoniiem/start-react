@@ -51,7 +51,7 @@ export default function Footer(){
                 <h3 className="uppercase text-center text-2xl font-bold">about freelancer</h3>
                 <p className="text-center capitalize text-[15px] ">
                     freelancer is a free use ,
-                    licensed bootstrap theme 
+                    licensed bootstrap <br/> theme
                     created by route
                 </p>
             </div>

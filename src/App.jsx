@@ -5,6 +5,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 import MainLayout from './layouts/main-layout'
 import Home from './pages/home'
 import About from './pages/about'
+import Portfolio from './pages/portfolio'
+import Contact from './pages/contact'
 
 
 
@@ -20,7 +22,9 @@ function App() {
         {path:'',element:<Home/>},
         {path:'home',element:<Home/>},
         {path:'about',element:<About/>},
-        {path:'portfolio',element:<h2>portfolio</h2>},
+        {path:'portfolio',element:<Portfolio/>},
+        {path:'contact',element:<Contact/>},
+
 
 
 

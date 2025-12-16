@@ -38,8 +38,8 @@ export default function Nav(){
     return(
         <>
 
-        <nav className=" sticky top-0 right-0 left-0 h-12 flex justify-between items-center  px-4 py-3 bg-neutral-900 text-white" >
-            <div className="logo">
+        <nav className=" sticky z-50 top-0 right-0 left-0 h-18 flex justify-between items-center  px-4 py-3 bg-neutral-900 text-white" >
+            <div className="logo uppercase text-2xl">
                 <NavLink to='/home'>start framework</NavLink>
             </div>
 

@@ -1,3 +1,5 @@
+import LineStar from "../components/svg";
+import Title from "../components/title";
 
 
 export default function Home(){
@@ -6,7 +8,15 @@ export default function Home(){
     return (
         <>
 
-        home
+        <div className="flex flex-col gap-5 items-center py-12 ">
+            <div className="w-44">
+                <img className="" src="./src/assets/images/avataaars.svg" alt="avatar " />
+            </div>
+
+            <Title Str = 'start framework'/>
+
+            <p className="capitalize"> graphic artist  - web designer - illustrator </p>
+        </div>
         
         </>
     )
