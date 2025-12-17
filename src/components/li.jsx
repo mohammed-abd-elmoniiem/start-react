@@ -8,7 +8,7 @@ export default function Li({link}){
     return (
         <>
         <li  className="">
-            <NavLink to={link}>
+            <NavLink className='px-3 py-1 duration-300 transition-colors ' to={link}>
                 {link}
             </NavLink>
         </li>

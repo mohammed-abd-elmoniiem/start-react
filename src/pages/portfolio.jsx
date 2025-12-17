@@ -11,21 +11,14 @@ export default function Portfolio(){
 
     return(
         <>
-        <div className="portfolio px-3 py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 ">
+        <div className="portfolio  container-sm py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 ">
             <div className=" col-start-1 -col-end-1">
                  <Title Str="portfolio component"/>
             </div>
 
            
              {products.map((ele)=><Card key={ele} path={`/images/${ele}`} />)}
-             {/* {products.map((ele)=><Card key={ele} path={`./src/assets/images/${ele}`} />)} */}
-
-            {/* <Card path={'./src/assets/images/poert1.png'} />
-            <Card path={'./src/assets/images/poert1.png'} />
-            <Card path={'./src/assets/images/poert1.png'} />
-            <Card path={'./src/assets/images/poert1.png'} />
-            <Card path={'./src/assets/images/poert1.png'} />
-            <Card path={'./src/assets/images/poert1.png'} /> */}
+            
 
         </div>
         

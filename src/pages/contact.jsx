@@ -9,7 +9,7 @@ export default function Contact(){
     return(
         <>
 
-        <div className="contact py-8 flex flex-col items-center  w-full">
+        <div className="contact py-8 container-sm flex flex-col items-center  w-full bg-gray-100">
 
             <div className="">
                 <Title Str={'conatct section'}/>

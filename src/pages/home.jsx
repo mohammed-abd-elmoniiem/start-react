@@ -8,7 +8,7 @@ export default function Home(){
     return (
         <>
 
-        <div className="flex flex-col gap-5 items-center py-12 ">
+        <div className="flex flex-col gap-5 items-center py-12  container-sm">
             <div className="w-44">
                 <img className="" src="/images/avataaars.svg" alt="avatar " />
             </div>

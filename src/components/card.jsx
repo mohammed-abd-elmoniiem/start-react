@@ -10,8 +10,7 @@ export default function Card({path}){
         <>
         <div className="rounded-2xl overflow-hidden relative"
           onClick={(eve)=>{
-            console.log(eve)
-
+        
             cardRef.current.classList.replace('hidden','flex')
 
           }}
@@ -26,7 +25,7 @@ export default function Card({path}){
 
         </div>
 
-        <div ref={cardRef}  className="fixed inset-0 z-50 bg-[#00000028] backdrop-blur-[2px]  hidden flex justify-center items-center " 
+        <div ref={cardRef}  className="fixed inset-0 z-50  p-5 bg-[#00000028] backdrop-blur-[2px] backdrop-grayscale-100  hidden flex justify-center items-center " 
 
         onClick={(eve)=>{
             if(eve.target == cardRef.current) eve.target.classList.replace('flex','hidden')
@@ -35,7 +34,7 @@ export default function Card({path}){
         
         >
 
-             <img className="w-125" src={path} alt={path}/>
+             <img className="w-125 " src={path} alt={path}/>
 
         </div>
         </>

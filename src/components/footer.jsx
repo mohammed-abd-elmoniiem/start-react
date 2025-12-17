@@ -22,7 +22,7 @@ export default function Footer(){
     return(
         <>
 
-        <div className="footer flex flex-col items-center sm:items-start  gap-12 sm:gap-8  text-amber-50 pt-15 sm:grid grid-cols-3">
+        <div className="footer container-sm *: flex flex-col items-center sm:items-start  gap-12 sm:gap-8  text-amber-50 py-15 sm:grid grid-cols-3">
 
             <div className="location flex flex-col items-center justify-start gap-2 h-full">
                 <h2 className="uppercase font-bold text-2xl">
@@ -55,14 +55,15 @@ export default function Footer(){
                     created by route
                 </p>
             </div>
-            <div className=" w-full col-start-1 col-end-4 text-center py-4 bg-black capitalize text-[15px]">
+            
+
+
+        </div>
+        <div className=" bg-black w-full text-white  col-start-1 -col-end-1 text-center py-3  capitalize text-[15px]">
                 <p className="">
                     copyright your website 2025
                 </p>
             </div>
-
-
-        </div>
         
         </>
     )

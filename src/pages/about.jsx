@@ -12,11 +12,11 @@ export default function About(){
 
     return(
         <>
-        <div className=" grow  text-amber-50 py-5 grid grid-cols-1 sm:grid-cols-2 justify-center  gap-8 px-3 sm:px-20 bg-neutral-800 
+        <div className=" container-sm grow   py-20 grid grid-cols-1 sm:grid-cols-2 justify-center  gap-8  bg-white
         ">
 
 
-            <div className="col-start-1 -col-end-1">
+            <div className="col-start-1 -col-end-1 pb-8">
                 <Title Str="about component"></Title>
             </div>
          
