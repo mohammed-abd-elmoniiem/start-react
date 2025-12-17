@@ -39,7 +39,7 @@ export default function Footer(){
                 <div className="flex gap-3 justify-center">
 
                     {
-                        links.map(({link,icon})=>(<a href={link} className="w-8 h-8  rounded-full border flex justify-center items-center ">
+                        links.map(({link,icon})=>(<a key={link} href={link} className="w-8 h-8  rounded-full border flex justify-center items-center ">
                       <i className={icon} ></i>
                     </a>))
                     }

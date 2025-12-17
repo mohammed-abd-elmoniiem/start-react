@@ -17,8 +17,8 @@ export default function Card({path}){
         >
             <img src={path} alt={path}/>
 
-            <div className="absolute inset-0 bg-red-600 flex justify-center items-center opacity-0 hover:opacity-100 duration-500"> 
-                <i className="fa fa-plus text-9xl"></i>
+            <div className="absolute inset-0 bg-black flex justify-center items-center opacity-0 hover:opacity-100 duration-500"> 
+                <i className="fa fa-plus text-9xl text-white"></i>
             </div>
 
 

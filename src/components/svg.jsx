@@ -1,6 +1,15 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useRef } from "react";
+
+
 
 
 export default function LineStar(){
+
+    const svgRef = useRef()
+
+    gsap.registerPlugin(useGSAP)
 
 
 
@@ -22,14 +31,39 @@ export default function LineStar(){
     
         }
 
+        useGSAP(()=>{
+
+            gsap.from(svgRef.current,{
+                duration:5,
+                rotateZ:360,
+                scale:0,
+                // repeat:-1,
+                transformBox:'fillBox',
+                transformOrigin:'center center',
+
+                ease:'elastic',
+                delay:0,
+            })
+
+            gsap.from('svg path.line',{
+                duration:1,
+                scaleX:0,
+                transformOrigin:'center'
+                
+            })
+
+            
+
+        })
+
 
     return(
         <>
         <svg className="sm:col-start-1 sm:col-end-3  mx-auto" width={200} height={30}>
+
+                        <path className="line" d='M0 15 L80 15 M120 15 L200 15 ' fill="none" strokeWidth='3.5 ' stroke="black"/>
         
-                        <path d='M0 15 L80 15 M120 15 L200 15 ' fill="none" strokeWidth='3.5 ' stroke="black"/>
-        
-                        <path d={star(4,100,15)} fill="black" strokeWidth='3 ' strokeLinejoin="round"  stroke="black"/>
+                        <path ref={svgRef}  d={star(4,100,15)} fill="black" strokeWidth='3 ' strokeLinejoin="round"  stroke="black"/>
         
                     </svg>
         </>

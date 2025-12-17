@@ -8,10 +8,10 @@ export default function Input({type,placeholder}){
     return(
         <>
 
-        <div className="flex flex-col w-full max-w-100 shadow-2xl relative  rounded-lg ">
+        <div className="flex flex-col w-full max-w-100 shadow-2xl relative  ">
 
             <input type={type} placeholder={placeholder}
-                className="bg-white w-full h-12 focus:outline-0 peer text-gray-950  z-20 px-2"
+                className="bg-white w-full h-12 focus:outline-0 peer text-gray-950  z-20 px-2 rounded-lg"
                 
                 />
 
