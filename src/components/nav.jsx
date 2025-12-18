@@ -2,38 +2,51 @@ import { Link, NavLink } from "react-router"
 import Li from "./li"
 
 import '@fortawesome/fontawesome-free/css/all.css'
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 
 export default function Nav(){
 
+    const [isOpen , setIsOpen] = useState(false)
+
     const ulRef= useRef()
 
+    gsap.registerPlugin(useGSAP)
+
+    
+
+      useGSAP(()=>{
+        gsap.from(ulRef.current,{
+            duration:0.2,
+            opacity:0
+        })
+    },[isOpen])
+
+     useGSAP(()=>{
+        gsap.from(ulRef.current.querySelectorAll('li'),{
+            duration:0.2,
+            x:40,
+            opacity:0,
+            stagger:0.1,
+            delay:0
+        })
+    },[isOpen])
+  
 
     const links = ['home','about','portfolio','contact'];
 
-    function displayUl(){
-        console.log(ulRef)
-        
+    function displayUl(){  
             ulRef.current.classList.replace('hidden','flex');
-        
-        
+            setIsOpen(!isOpen)
+
+           
     }
 
     function hiddenUl(e){
-
-        if(e.target != ulRef)
-         
             ulRef.current.classList.replace('flex','hidden');
-        
-
     }
-
-
-
-
-
-
 
     return(
         <>
@@ -53,7 +66,7 @@ export default function Nav(){
 
             
 
-            <ul ref={ulRef} className="hidden absolute sm:static  top-0  right-0 w-1/2 sm:w-fit h-screen sm:h-fit sm:flex flex-col items-start sm:flex-row gap-3 backdrop-blur-md bg-[#05050560]  sm:bg-transparent px-4 py-12 sm:p-2 capitalize font-light"
+            <ul ref={ulRef} className="h-screen hidden top-0  right-0 w-1/2 absolute sm:static   sm:w-fit  sm:h-fit sm:flex flex-col items-start sm:flex-row gap-3 backdrop-blur-lg bg-[#05050560]  sm:bg-transparent px-4 py-12 sm:p-2 capitalize font-light sm:border-0 border-l-2 border-black"
                     onClick={e=>{
                     hiddenUl(e)
                         }} 

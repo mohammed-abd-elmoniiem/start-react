@@ -8,7 +8,7 @@ export default function Card({path}){
 
     return(
         <>
-        <div className="rounded-2xl overflow-hidden relative"
+        <div className="rounded-2xl overflow-hidden relative drop-shadow-2xl drop-shadow-gray-500"
           onClick={(eve)=>{
         
             cardRef.current.classList.replace('hidden','flex')

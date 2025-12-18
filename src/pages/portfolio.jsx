@@ -17,7 +17,7 @@ export default function Portfolio(){
             </div>
 
            
-             {products.map((ele)=><Card key={ele} path={`/images/${ele}`} />)}
+             {products.map((ele,index)=><Card key={ `${ele} ${index}`} path={`/images/${ele}`} />)}
             
 
         </div>
